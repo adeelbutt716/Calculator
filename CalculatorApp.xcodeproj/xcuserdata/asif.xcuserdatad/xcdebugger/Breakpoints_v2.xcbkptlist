@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "20189EB0-BF67-4BE3-901D-4E41D6D9AADF"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FAAD4312-D0DE-4035-BEE2-230EC134AE40"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "424"
+            endingLineNumber = "424"
+            landmarkName = "handlReverse()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "11D7CD51-A171-4178-82C9-CCBDB2CB096A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "404"
+            endingLineNumber = "404"
+            landmarkName = "observeValue(forKeyPath:of:change:context:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07551BD3-B136-417D-A805-2F9973C7A643"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1325"
+            endingLineNumber = "1325"
+            landmarkName = "calculateExpression(expression:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "788FAA6C-A5E8-4469-82B8-4B3249F6EAE9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1208"
+            endingLineNumber = "1208"
+            landmarkName = "prepareExpression(expression:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B01A131C-FE7A-4780-933E-0C6EFAB603F2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1296"
+            endingLineNumber = "1296"
+            landmarkName = "roundMyAnswer(ans:precision:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B01A131C-FE7A-4780-933E-0C6EFAB603F2 - aa25fbb7448d04df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.roundMyAnswer(ans: Swift.String, precision: Swift.Int) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1297"
+                  endingLineNumber = "1297"
+                  offsetFromSymbolStart = "332">
+               </Location>
+               <Location
+                  uuid = "B01A131C-FE7A-4780-933E-0C6EFAB603F2 - aa25fbb7448d04fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.roundMyAnswer(ans: Swift.String, precision: Swift.Int) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1296"
+                  endingLineNumber = "1296"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "B01A131C-FE7A-4780-933E-0C6EFAB603F2 - aa25fbb7448d04fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.roundMyAnswer(ans: Swift.String, precision: Swift.Int) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1296"
+                  endingLineNumber = "1296"
+                  offsetFromSymbolStart = "263">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A4A3B2F-F0AE-42A9-89EC-04EC17692E0B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1291"
+            endingLineNumber = "1291"
+            landmarkName = "getResult(expression:angleType:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1A4A3B2F-F0AE-42A9-89EC-04EC17692E0B - 563af0660e9259e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.getResult(expression: Swift.String, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1291"
+                  endingLineNumber = "1291"
+                  offsetFromSymbolStart = "3688">
+               </Location>
+               <Location
+                  uuid = "1A4A3B2F-F0AE-42A9-89EC-04EC17692E0B - 563af0660e9259e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.getResult(expression: Swift.String, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1291"
+                  endingLineNumber = "1291"
+                  offsetFromSymbolStart = "3592">
+               </Location>
+               <Location
+                  uuid = "1A4A3B2F-F0AE-42A9-89EC-04EC17692E0B - 563af0660e9259e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.getResult(expression: Swift.String, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1291"
+                  endingLineNumber = "1291"
+                  offsetFromSymbolStart = "4918">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0937C972-A235-4B58-B3B9-83067C45C680"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1242"
+            endingLineNumber = "1242"
+            landmarkName = "getResult(expression:angleType:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0937C972-A235-4B58-B3B9-83067C45C680 - 563af0660e924397"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.getResult(expression: Swift.String, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1241"
+                  endingLineNumber = "1241"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "0937C972-A235-4B58-B3B9-83067C45C680 - 563af0660e9243b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.getResult(expression: Swift.String, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1242"
+                  endingLineNumber = "1242"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "0937C972-A235-4B58-B3B9-83067C45C680 - 563af0660e9243b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.getResult(expression: Swift.String, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1242"
+                  endingLineNumber = "1242"
+                  offsetFromSymbolStart = "245">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "267E780E-9BBC-4FAB-BF02-086F47A61561"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "831"
+            endingLineNumber = "831"
+            landmarkName = "solveExpression(_:angleType:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "267E780E-9BBC-4FAB-BF02-086F47A61561 - fb6a53daf19421df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.solveExpression(_: inout Swift.Array&lt;Swift.String&gt;, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "830"
+                  endingLineNumber = "830"
+                  offsetFromSymbolStart = "3148">
+               </Location>
+               <Location
+                  uuid = "267E780E-9BBC-4FAB-BF02-086F47A61561 - fb6a53daf19421fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.solveExpression(_: inout Swift.Array&lt;Swift.String&gt;, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "831"
+                  endingLineNumber = "831"
+                  offsetFromSymbolStart = "3148">
+               </Location>
+               <Location
+                  uuid = "267E780E-9BBC-4FAB-BF02-086F47A61561 - fb6a53daf19421fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.solveExpression(_: inout Swift.Array&lt;Swift.String&gt;, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "831"
+                  endingLineNumber = "831"
+                  offsetFromSymbolStart = "4300">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B8BE5EDB-73AE-4525-92D6-937BD1B7FBBB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "btnScientificTap(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "58502E4B-196B-4381-BCE3-0843EF49937D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "518"
+            endingLineNumber = "518"
+            landmarkName = "appendNumberToScreen(number:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A240E3C9-3605-4FC7-8419-21C0D1A04E6A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1316"
+            endingLineNumber = "1316"
+            landmarkName = "roundMyAnswer(ans:precision:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A240E3C9-3605-4FC7-8419-21C0D1A04E6A - aa25fbb7448d0614"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.roundMyAnswer(ans: Swift.String, precision: Swift.Int) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1318"
+                  endingLineNumber = "1318"
+                  offsetFromSymbolStart = "1920">
+               </Location>
+               <Location
+                  uuid = "A240E3C9-3605-4FC7-8419-21C0D1A04E6A - aa25fbb7448d064a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.roundMyAnswer(ans: Swift.String, precision: Swift.Int) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1316"
+                  endingLineNumber = "1316"
+                  offsetFromSymbolStart = "1740">
+               </Location>
+               <Location
+                  uuid = "A240E3C9-3605-4FC7-8419-21C0D1A04E6A - aa25fbb7448d064a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.roundMyAnswer(ans: Swift.String, precision: Swift.Int) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1316"
+                  endingLineNumber = "1316"
+                  offsetFromSymbolStart = "2319">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E0FDAE9D-F903-480E-A2EE-E119F3428929"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "816"
+            endingLineNumber = "816"
+            landmarkName = "solveExpression(_:angleType:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E0FDAE9D-F903-480E-A2EE-E119F3428929 - fb6a53daf1942fce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.solveExpression(_: inout Swift.Array&lt;Swift.String&gt;, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "815"
+                  endingLineNumber = "815"
+                  offsetFromSymbolStart = "2496">
+               </Location>
+               <Location
+                  uuid = "E0FDAE9D-F903-480E-A2EE-E119F3428929 - fb6a53daf1942fed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.solveExpression(_: inout Swift.Array&lt;Swift.String&gt;, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "816"
+                  endingLineNumber = "816"
+                  offsetFromSymbolStart = "2496">
+               </Location>
+               <Location
+                  uuid = "E0FDAE9D-F903-480E-A2EE-E119F3428929 - fb6a53daf1942fed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.solveExpression(_: inout Swift.Array&lt;Swift.String&gt;, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "816"
+                  endingLineNumber = "816"
+                  offsetFromSymbolStart = "3439">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "94E19C91-82B6-476A-8870-EB51BCFD86C5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "826"
+            endingLineNumber = "826"
+            landmarkName = "solveExpression(_:angleType:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "94E19C91-82B6-476A-8870-EB51BCFD86C5 - fb6a53daf19420b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.solveExpression(_: inout Swift.Array&lt;Swift.String&gt;, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "825"
+                  endingLineNumber = "825"
+                  offsetFromSymbolStart = "2940">
+               </Location>
+               <Location
+                  uuid = "94E19C91-82B6-476A-8870-EB51BCFD86C5 - fb6a53daf1942053"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.solveExpression(_: inout Swift.Array&lt;Swift.String&gt;, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "826"
+                  endingLineNumber = "826"
+                  offsetFromSymbolStart = "2940">
+               </Location>
+               <Location
+                  uuid = "94E19C91-82B6-476A-8870-EB51BCFD86C5 - fb6a53daf1942053"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.solveExpression(_: inout Swift.Array&lt;Swift.String&gt;, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "826"
+                  endingLineNumber = "826"
+                  offsetFromSymbolStart = "4014">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16E468C9-611E-4203-87D5-62E9A2B21E23"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1258"
+            endingLineNumber = "1258"
+            landmarkName = "getResult(expression:angleType:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "16E468C9-611E-4203-87D5-62E9A2B21E23 - 563af0660e925da0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.getResult(expression: Swift.String, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1258"
+                  endingLineNumber = "1258"
+                  offsetFromSymbolStart = "1332">
+               </Location>
+               <Location
+                  uuid = "16E468C9-611E-4203-87D5-62E9A2B21E23 - 563af0660e925da0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.getResult(expression: Swift.String, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1258"
+                  endingLineNumber = "1258"
+                  offsetFromSymbolStart = "304">
+               </Location>
+               <Location
+                  uuid = "16E468C9-611E-4203-87D5-62E9A2B21E23 - 563af0660e925da0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.getResult(expression: Swift.String, angleType: CalculatorApp.AngleType) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1258"
+                  endingLineNumber = "1258"
+                  offsetFromSymbolStart = "423">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2AD9FAB3-2FA1-4DC0-A626-EE1D99A23E18"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1311"
+            endingLineNumber = "1311"
+            landmarkName = "roundMyAnswer(ans:precision:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2AD9FAB3-2FA1-4DC0-A626-EE1D99A23E18 - aa25fbb7448d06ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.roundMyAnswer(ans: Swift.String, precision: Swift.Int) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1311"
+                  endingLineNumber = "1311"
+                  offsetFromSymbolStart = "1232">
+               </Location>
+               <Location
+                  uuid = "2AD9FAB3-2FA1-4DC0-A626-EE1D99A23E18 - aa25fbb7448d06ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.roundMyAnswer(ans: Swift.String, precision: Swift.Int) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1311"
+                  endingLineNumber = "1311"
+                  offsetFromSymbolStart = "1100">
+               </Location>
+               <Location
+                  uuid = "2AD9FAB3-2FA1-4DC0-A626-EE1D99A23E18 - aa25fbb7448d06ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.roundMyAnswer(ans: Swift.String, precision: Swift.Int) throws -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1311"
+                  endingLineNumber = "1311"
+                  offsetFromSymbolStart = "1403">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1FF4F06F-22B8-41FF-A8E3-AB4123FAE858"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1340"
+            endingLineNumber = "1340"
+            landmarkName = "calculateExpression(expression:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1FF4F06F-22B8-41FF-A8E3-AB4123FAE858 - 3c45bf18859c7d45"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.calculateExpression(expression: Swift.String) -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1340"
+                  endingLineNumber = "1340"
+                  offsetFromSymbolStart = "840">
+               </Location>
+               <Location
+                  uuid = "1FF4F06F-22B8-41FF-A8E3-AB4123FAE858 - 3c45bf18859c7d45"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.calculateExpression(expression: Swift.String) -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1340"
+                  endingLineNumber = "1340"
+                  offsetFromSymbolStart = "752">
+               </Location>
+               <Location
+                  uuid = "1FF4F06F-22B8-41FF-A8E3-AB4123FAE858 - 3c45bf18859c7d45"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.calculateExpression(expression: Swift.String) -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1340"
+                  endingLineNumber = "1340"
+                  offsetFromSymbolStart = "1076">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2F9B306C-2C86-4362-B8F3-235EF3136136"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1338"
+            endingLineNumber = "1338"
+            landmarkName = "calculateExpression(expression:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2F9B306C-2C86-4362-B8F3-235EF3136136 - 3c45bf18859c7d26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.calculateExpression(expression: Swift.String) -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1339"
+                  endingLineNumber = "1339"
+                  offsetFromSymbolStart = "752">
+               </Location>
+               <Location
+                  uuid = "2F9B306C-2C86-4362-B8F3-235EF3136136 - 3c45bf18859c7d07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.calculateExpression(expression: Swift.String) -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1338"
+                  endingLineNumber = "1338"
+                  offsetFromSymbolStart = "584">
+               </Location>
+               <Location
+                  uuid = "2F9B306C-2C86-4362-B8F3-235EF3136136 - 3c45bf18859c7d07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.calculateExpression(expression: Swift.String) -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1338"
+                  endingLineNumber = "1338"
+                  offsetFromSymbolStart = "719">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "190DA8DE-7DC8-4156-AC22-3A1D17CD7DE1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "853"
+            endingLineNumber = "853"
+            landmarkName = "solveAddition(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50F3BE7B-5CD5-40B5-8AAD-6C3F79E02D62"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "727"
+            endingLineNumber = "727"
+            landmarkName = "tryBalancingBrackets(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "744E6634-101B-450F-940D-332145CF2E1F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1329"
+            endingLineNumber = "1329"
+            landmarkName = "calculateExpression(expression:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "744E6634-101B-450F-940D-332145CF2E1F - 3c45bf18859c7ed8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.calculateExpression(expression: Swift.String) -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1329"
+                  endingLineNumber = "1329"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  uuid = "744E6634-101B-450F-940D-332145CF2E1F - 3c45bf18859c7ed8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.calculateExpression(expression: Swift.String) -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1329"
+                  endingLineNumber = "1329"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "744E6634-101B-450F-940D-332145CF2E1F - 3c45bf18859c7ed8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.calculateExpression(expression: Swift.String) -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1329"
+                  endingLineNumber = "1329"
+                  offsetFromSymbolStart = "329">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81C3A46A-E562-4C4F-9436-48133C44B150"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1205"
+            endingLineNumber = "1205"
+            landmarkName = "prepareExpression(expression:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E980FDEE-9403-4902-A819-88F35B3C26D1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "837"
+            endingLineNumber = "837"
+            landmarkName = "solveAddition(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B0C4E16-2416-427B-95D7-1F37FA96A78E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "868"
+            endingLineNumber = "868"
+            landmarkName = "solveAddition(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2B58D1C-31C2-4A70-A6D9-F6BF60767BE5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1211"
+            endingLineNumber = "1211"
+            landmarkName = "prepareExpression(expression:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18F99E7B-101C-44E2-A7D7-17978FF65756"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1218"
+            endingLineNumber = "1218"
+            landmarkName = "prepareExpression(expression:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D68DA72B-1E26-4F29-BB47-506C70ED6A6A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1221"
+            endingLineNumber = "1221"
+            landmarkName = "prepareExpression(expression:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7483111D-52BC-4600-92CC-173845BCD775"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1224"
+            endingLineNumber = "1224"
+            landmarkName = "prepareExpression(expression:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52549FB8-FBD3-4A1A-A370-296BA6FFFF7E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CalculatorApp/ViewController2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1230"
+            endingLineNumber = "1230"
+            landmarkName = "prepareExpression(expression:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "52549FB8-FBD3-4A1A-A370-296BA6FFFF7E - 213bc1be31cad05a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.prepareExpression(expression: Swift.String) -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1230"
+                  endingLineNumber = "1230"
+                  offsetFromSymbolStart = "5219">
+               </Location>
+               <Location
+                  uuid = "52549FB8-FBD3-4A1A-A370-296BA6FFFF7E - 213bc1be31cad05a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.prepareExpression(expression: Swift.String) -&gt; Swift.String"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1230"
+                  endingLineNumber = "1230"
+                  offsetFromSymbolStart = "4905">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
