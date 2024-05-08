@@ -7,8 +7,6 @@
 
 import UIKit
 import AVFoundation
-import Foundation
-
 
 class ViewController2: UIViewController {
     
@@ -47,7 +45,7 @@ class ViewController2: UIViewController {
     var isRadMode = true
     @IBOutlet weak var topView: UIView!
     
-  
+    
 
     var historyList = [History]()
     @IBOutlet weak var lblFinalResult: UILabel!
@@ -57,6 +55,7 @@ class ViewController2: UIViewController {
     @IBOutlet weak var tblHistory: UITableView!
     
     var audioPlayer: AVAudioPlayer?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -119,13 +118,13 @@ class ViewController2: UIViewController {
             
             }
         case 2:
-            self.appendNumberToScreen(number:  lblSin.text! + "(")
+            self.appendNumberToScreen(number:  lblSin.text!)
             print("hello")
         case 3:
-            self.appendNumberToScreen(number:  lblCos.text! + "(")
+            self.appendNumberToScreen(number:  lblCos.text!)
             print("hello2")
         case 4:
-            self.appendNumberToScreen(number:  lblTan.text! + "(")
+            self.appendNumberToScreen(number:  lblTan.text!)
             print("hello")
         case 5:
             self.appendNumberToScreen(number: self.btnlogy.titleLabel!.text!)
@@ -401,8 +400,8 @@ class ViewController2: UIViewController {
       if keyPath == "text" {
 //          print("old:", change?[.oldKey])
 //          print("new:", change?[.newKey])
-          let myValue = self.calculateExpression(expression: self.resultLabel.text!)
-          self.lblFinalResult.text = myValue
+          let myValue = self.calculate(expression: change?[.newKey] as! String)
+          self.lblFinalResult.text = formatNumber(myValue)
       }
     }
     
@@ -589,6 +588,68 @@ class ViewController2: UIViewController {
         return numbers.isEmpty ? 0.0 : numbers.first!
     }
 
+    
+    
+//    private func calculate(_ expression: String) -> Double {
+//        var sanitizedExpression = expression.replacingOccurrences(of: "\\s", with: "", options: .regularExpression) // Remove white spaces
+//
+//        var numbers = [Double]()
+//        var operators = [Character]()
+//        var currentNumber = ""
+//        var unaryMinus = false // Track unary negation
+//        for char in sanitizedExpression {
+//            if char.isNumber || char == "." {
+//                currentNumber.append(char)
+//            } else {
+//                if char == "-" && currentNumber.isEmpty && (numbers.isEmpty || (!operators.isEmpty && operators.last! == "+" || operators.last! == "-" || operators.last! == "*" || operators.last! == "/" || operators.last! == "%")) {
+//                    unaryMinus = true // Found unary negation
+//                    continue // Skip adding '-' to operators
+//                }
+//                if !currentNumber.isEmpty {
+//                    numbers.append(unaryMinus ? -Double(currentNumber)! : Double(currentNumber)!)
+//                    currentNumber = ""
+//                }
+//                if char == "%" {
+//                    if !operators.isEmpty && operators.last! == "*" {
+//                        // Calculate percentage if '*' is the previous operator
+//                        let base = numbers.popLast() ?? 0.0
+//                        let percentage = numbers.popLast() ?? 1.0
+//                        numbers.append(base * (percentage / 100))
+//                    } else {
+//                        // Treat '%' as a regular operator
+//                        while !operators.isEmpty && precedence(operators.last!) >= precedence(char) {
+//                            let op = operators.removeLast()
+//                            let operand2 = numbers.removeLast()
+//                            let operand1 = numbers.removeLast()
+//                            numbers.append(applyOperator(operand1, operand2, op))
+//                        }
+//                        operators.append(char)
+//                    }
+//                } else if "+-*/.".contains(char) {
+//                    // Handle other operators
+//                    while !operators.isEmpty && precedence(operators.last!) >= precedence(char) {
+//                        let op = operators.removeLast()
+//                        let operand2 = numbers.removeLast()
+//                        let operand1 = numbers.removeLast()
+//                        numbers.append(applyOperator(operand1, operand2, op))
+//                    }
+//                    operators.append(char)
+//                }
+//                unaryMinus = false // Reset unaryMinus flag
+//            }
+//        }
+//        if !currentNumber.isEmpty {
+//            numbers.append(unaryMinus ? -Double(currentNumber)! : Double(currentNumber)!)
+//        }
+//        while !operators.isEmpty && numbers.count >= 2 {
+//            let op = operators.removeLast()
+//            let operand2 = numbers.removeLast()
+//            let operand1 = numbers.removeLast()
+//            numbers.append(applyOperator(operand1, operand2, op))
+//        }
+//
+//        return numbers.isEmpty ? 0.0 : numbers.first!
+//    }
 
     private func precedence(_ operator: Character) -> Int {
         switch `operator` {
@@ -628,555 +689,63 @@ class ViewController2: UIViewController {
         attributedString.append(attributedText2)
         return attributedString
     }
-    //for scientific calculator
-    func removeNumberSeparator(_ expression: String, separator: Character = ",") -> String {
-        return expression.replacingOccurrences(of: String(separator), with: "")
+    // scientific calcultor start
+    
+    func isRightUnaryOperator(_ char: Character) -> Bool {
+        let charSet: Set<Character> = ["%", "!"]
+        return charSet.contains(char)
+    }
+
+    func isBinaryOperator(_ char: Character) -> Bool {
+        let charSet: Set<Character> = ["^", "-", "−", "+", "x", "*", "÷", "/"]
+        return charSet.contains(char)
+    }
+
+    func isConstant(_ char: Character) -> Bool {
+        return isPi(char) || isEulerNumber(char)
+    }
+
+    func isPi(_ char: Character) -> Bool {
+        return char == "π"
+    }
+
+    func isEulerNumber(_ char: Character) -> Bool {
+        return char == "e"
+    }
+
+    func isTrigonometricChar(_ char: Character) -> Bool {
+        let charSet: Set<Character> = ["¹", "⁻", "s", "i", "n", "c", "o", "t", "a", "l", "g"]
+        return charSet.contains(char)
     }
     
-    func addSeparator(_ string: String, separator: Character, isIndian: Bool) -> String {
-        var decimalIndex = string.firstIndex(of: ".") ?? string.endIndex
-        var str = string
-        var temp = 0
-        var mSwitch = true
-        var i = str.index(before: decimalIndex)
-        
-        while i >= str.startIndex {
-            temp += 1
-            
-            if mSwitch && temp % 3 == 0 {
-                temp = 0
-                mSwitch = !isIndian
-                
-                if i == str.index(after: str.startIndex) && (string[string.startIndex] == "-" || string[string.startIndex] == "\u{2212}") {
-                    break
-                }
-                
-                str.insert(separator, at: i)
-            } else if !mSwitch && temp % 2 == 0 {
-                temp = 0
-                
-                if i == str.index(after: str.startIndex) && (string[string.startIndex] == "-" || string[string.startIndex] == "\u{2212}") {
-                    break
-                }
-                
-                str.insert(separator, at: i)
-            }
-            
-            if i == str.startIndex {
-                break
-            }
-            
-            i = str.index(before: i)
-        }
-        
-        return str
+    func isNumber(_ char: Character) -> Bool {
+        return isNumber(char) || isConstant(char)
     }
-    
-    func separateOutExpression(_ expression: String) -> [String] {
-        var list = [String]()
-        var temp = ""
-        
-        for char in expression {
-            if char.isOperator() || char == "(" || char == ")" {
-                if !temp.isEmpty {
-                    list.append(temp)
-                    temp = ""
-                }
-                list.append(String(char))
-            } else {
-                temp.append(char)
-            }
-        }
-        
-        if !temp.isEmpty {
-            list.append(temp)
-        }
-        
-        return list
+
+    func isOperator(_ char: Character) -> Bool {
+        return isUnaryOperator(char) || isBinaryOperator(char)
+    }
+
+    func isUnaryOperator(_ char: Character) -> Bool {
+        return isLeftUnaryOperator(char) || isRightUnaryOperator(char)
+    }
+
+    func isLeftUnaryOperator(_ char: Character) -> Bool {
+        let charSet: Set<Character> = ["√", "∛"]
+        return charSet.contains(char)
     }
     
     func isNumber(_ string: String) -> Bool {
-        return string.range(of: #"-?\d+(\.\d+(E\d+)?)?"#, options: .regularExpression) != nil
+        let regex = try! NSRegularExpression(pattern: "-?\\d+(\\.\\d+(E\\d+)?)?", options: [])
+        let range = NSRange(location: 0, length: string.utf16.count)
+        return regex.firstMatch(in: string, options: [], range: range) != nil
     }
     
-    func formatNumber(_ x: Decimal, scale: Int) -> String {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .scientific
-        formatter.minimumFractionDigits = scale
-        formatter.minimumIntegerDigits = 1
-        formatter.roundingMode = .halfUp
-        
-        return formatter.string(for: NSDecimalNumber(decimal: x)) ?? ""
-    }
-    
-    func isExpressionBalanced(_ expression: String) -> Bool {
-        var stack = [Character]()
-        for char in expression {
-            if char == "(" {
-                stack.append(char)
-            } else if char == ")" {
-                if stack.isEmpty { return false }
-                stack.popLast()
-            }
-        }
-        return stack.isEmpty
-    }
-
-    func tryBalancingBrackets(_ expression: String) -> String {
-        var exp = ""
-        exp = expression
-        var a = 0
-        var b = 0
-
-        if exp.last == "(" {
-            while exp.last == "(" {
-                exp.removeLast()
-                if exp.isEmpty { return exp }
-            }
-        }
-
-        var openBracketCount = 0
-        var numOfPairs = 0
-
-        for element in exp {
-            if element == "(" {
-                openBracketCount += 1
-                a += 1
-            } else if element == ")" {
-                b += 1
-                if openBracketCount > 0 {
-                    openBracketCount -= 1
-                    numOfPairs += 1
-                }
-            }
-        }
-
-        var reqOpen = b - numOfPairs
-        var reqClose = a - numOfPairs
-        while reqOpen > 0 {
-            exp = "(\(exp)"
-            reqOpen -= 1
-        }
-        while reqClose > 0 {
-            exp = "\(exp))"
-            reqClose -= 1
-        }
-        return exp
-    }
-    
-    func canBeLastChar(_ char: Character) -> Bool {
-        return char.isNumber || char.isRightUnaryOperator() || char == ")"
-    }
-
-    func solveExpression(_ expressionStack: inout [String], angleType:AngleType = AngleType.deg) throws -> String {
-        var stack: [String]
-
-        if expressionStack.contains("-") {
-            stack = []
-            while !expressionStack.isEmpty {
-                if expressionStack.last == "-" {
-                    expressionStack.removeLast()
-                    let negValue = "-\(expressionStack.removeLast())"
-                    stack.append(negValue)
-                    continue
-                }
-                stack.append(expressionStack.removeLast())
-            }
-            stack.reverse()
-        } else {
-            stack = expressionStack
-        }
-
-        // Check if solved
-        if stack.count == 1 { return stack.removeLast() }
-
-        // Solve trigonometric operators
-        stack = try solveTrigonometricExpression(stack: &stack, angleType: angleType)
-
-        // Check if solved
-        if stack.count == 1 { return stack.removeLast() }
-
-        // Solve left unary operators
-        stack = try solveLeftUnary(stack: &stack)
-
-        // Check if solved
-        if stack.count == 1 { return stack.removeLast() }
-
-        // Solve right unary operators
-        stack = try solveRightUnary(stack: &stack)
-
-        // Check if solved
-        if stack.count == 1 { return stack.removeLast() }
-
-        stack = solvePower(stack: &stack)
-
-        // Check if solved
-        if stack.count == 1 { return stack.removeLast() }
-
-        stack = try solveDivision(&stack)
-
-        // Check if solved
-        if stack.count == 1 { return stack.removeLast() }
-
-        stack = solveMultiplication(&stack)
-
-        // Check if solved
-        if stack.count == 1 { return stack.removeLast() }
-
-        stack = solveAddition(stack)
-
-        // Check if solved
-        if stack.count == 1 { return stack.removeLast() }
-
-        throw CalculationException(msg: CalculationMessage.invalidExpression)
-    }
-
-    func solveAddition(_ stack: [String]) -> [String] {
-        var tempStack = [String]()
-        var temp: String
-        var stack = stack // Make the input stack mutable
-//        while !stack.isEmpty {
-//            temp = stack.removeLast()
-//            if temp == "+" {
-//                let precision = DecimalConstants.mathContext
-//                let num1 = BigDecimalMath.toBigDecimal(tempStack.removeLast()) // Assuming BigDecimalMath.toBigDecimal returns a string
-//                let num2 = BigDecimalMath.toBigDecimal(stack.removeLast()) // Assuming BigDecimalMath.toBigDecimal returns a string
-//                let result = num1 + num2
-//                tempStack.append(result)
-//            } else {
-//                tempStack.append(temp)
-//            }
-//        }
+    func solveRoots(stack: inout [String]) -> Double {
+        var num = Double(stack.popLast()!)!
         
         while !stack.isEmpty {
-            temp = stack.removeLast()
-            if temp == "+" {
-                // Convert strings to Decimal
-                guard let num1 = Decimal(string: tempStack.removeLast()),
-                      let num2 = Decimal(string: stack.removeLast()) else {
-                    fatalError("Error: Unable to convert strings to Decimal")
-                }
-                // Perform multiplication
-                let result = num1 + num2
-                // Append the result back to the temporary stack as a string
-                tempStack.append("\(result)")
-            } else {
-                tempStack.append(temp)
-            }
-        }
-        
-        return tempStack.reversed()
-    }
-    
-//    func solveMultiplication(stack: inout [String]) -> [String] {
-//        var tempStack = [String]()
-//        var temp: String
-//        while !stack.isEmpty {
-//            temp = stack.removeLast()
-//            if temp == "*" {
-//                let precision = DecimalConstants.mathContext
-//                let num1 = BigDecimalMath.toBigDecimal(tempStack.removeLast()) // Assuming BigDecimalMath.toBigDecimal returns a string
-//                let num2 = BigDecimalMath.toBigDecimal(stack.removeLast()) // Assuming BigDecimalMath.toBigDecimal returns a string
-//                let result = num1 * num2
-//                tempStack.append(result)
-//            } else {
-//                tempStack.append(temp)
-//            }
-//        }
-//        return tempStack.reversed()
-//    }
-    
-    func solveMultiplication(_ stack: inout [String]) -> [String] {
-        var tempStack = [String]()
-        var temp: String
-        while !stack.isEmpty {
-            temp = stack.removeLast()
-            if temp == "*" {
-                // Convert strings to Decimal
-                guard let num1 = Decimal(string: tempStack.removeLast()),
-                      let num2 = Decimal(string: stack.removeLast()) else {
-                    fatalError("Error: Unable to convert strings to Decimal")
-                }
-                // Perform multiplication
-                let result = num1 * num2
-                // Append the result back to the temporary stack as a string
-                tempStack.append("\(result)")
-            } else {
-                tempStack.append(temp)
-            }
-        }
-        return tempStack.reversed()
-    }
-
-//    func solveDivision(stack: inout [String]) throws -> [String] {
-//        var tempStack = [String]()
-//        var temp: String
-//        while !stack.isEmpty {
-//            temp = stack.removeLast()
-//            if temp == "/" {
-//                let precision = DecimalConstants.mathContext
-//                let num1 = BigDecimalMath.toBigDecimal(tempStack.removeLast()) // Assuming BigDecimalMath.toBigDecimal returns a string
-//                let num2 = BigDecimalMath.toBigDecimal(stack.removeLast()) // Assuming BigDecimalMath.toBigDecimal returns a string
-//                if num2 == "0" {
-//                    throw CalculationException(msg: CalculationMessage.divideByZero)
-//                }
-//                let result = num1 / num2
-//                tempStack.append(result)
-//            } else {
-//                tempStack.append(temp)
-//            }
-//        }
-//        
-//        return tempStack.reversed()
-//    }
-    
-    func solveDivision(_ stack: inout [String]) throws -> [String] {
-        var tempStack = [String]()
-        var temp: String
-        while !stack.isEmpty {
-            temp = stack.removeLast()
-            if temp == "/" {
-                // Convert strings to Decimal
-                guard let num1 = Decimal(string: tempStack.removeLast()),
-                      let num2 = Decimal(string: stack.removeLast()) else {
-                    throw CalculationException(msg: CalculationMessage.invalidExpression)
-                }
-                if num2 == 0 {
-                    throw CalculationException(msg: CalculationMessage.divideByZero)
-                }
-                // Perform division
-                let result = num1 / num2
-                // Append the result back to the temporary stack as a string
-                tempStack.append("\(result)")
-            } else {
-                tempStack.append(temp)
-            }
-        }
-        
-        return tempStack.reversed()
-    }
-    
-    func solveTrigonometricExpression(stack: inout [String], angleType: AngleType) throws -> [String] {
-        var tempStack = [String]()
-        let isDegree = angleType == AngleType.deg
-        var temp: String
-        
-        while !stack.isEmpty {
-            temp = stack.removeLast()
-            switch temp {
-            case "sin", "-sin":
-                var num = Double(stack.removeLast()) ?? 0
-                if !num.isFinite {
-                    throw CalculationException(msg: .valueTooLarge)
-                }
-                if isDegree {
-                    if num.truncatingRemainder(dividingBy: 180) == 0 {
-                        tempStack.append("0.0")
-                        continue
-                    }
-                    num = num.toRadians
-                } else {
-                    if num.truncatingRemainder(dividingBy: Double.pi) == 0 {
-                        tempStack.append("0.0")
-                        continue
-                    }
-                }
-                num = sin(num)
-                if temp == "-sin" {
-                    num = -num
-                }
-                tempStack.append("\(num)")
-                
-            case "sinh", "-sinh":
-                var num = Double(stack.removeLast()) ?? 0
-                if !num.isFinite {
-                    throw CalculationException(msg: .valueTooLarge)
-                }
-                if isDegree {
-                    if num.truncatingRemainder(dividingBy: 180) == 0 {
-                        tempStack.append("0.0")
-                        continue
-                    }
-                    num = num.toRadians
-                } else {
-                    if num.truncatingRemainder(dividingBy: Double.pi) == 0 {
-                        tempStack.append("0.0")
-                        continue
-                    }
-                }
-                num = sinh(num)
-                if temp == "-sinh" {
-                    num = -num
-                }
-                tempStack.append("\(num)")
-                
-            case "cos", "-cos":
-                var num = Double(stack.removeLast()) ?? 0
-                if !num.isFinite {
-                    throw CalculationException(msg: .valueTooLarge)
-                }
-                if isDegree {
-                    if num.truncatingRemainder(dividingBy: 90) == 0 && num.truncatingRemainder(dividingBy: 180) != 0 {
-                        tempStack.append("0.0")
-                        continue
-                    }
-                    num = num.toRadians
-                } else {
-                    if num.truncatingRemainder(dividingBy: Double.pi / 2) == 0 && num.truncatingRemainder(dividingBy: Double.pi) != 0 {
-                        tempStack.append("0.0")
-                        continue
-                    }
-                }
-                num = cos(num)
-                if temp == "-cos" {
-                    num = -num
-                }
-                tempStack.append("\(num)")
-                
-            // Similar cases for other trigonometric functions...
-                
-            default:
-                tempStack.append(temp)
-            }
-        }
-        return tempStack.reversed()
-    }
-
-    func solveLeftUnary(stack: inout [String]) throws -> [String] {
-        var tempStack = [String]()
-        var temp: String
-        
-        while !stack.isEmpty {
-            temp = stack.removeLast()
-            switch temp {
-            case "√", "-√", "∛", "-∛":
-                var nextToken = stack.last ?? ""
-                let num: String
-                if  nextToken.first?.isLeftUnaryOperator() ?? false {
-                    var gg = [String]()
-                    while !stack.isEmpty &&  nextToken.first?.isLeftUnaryOperator() ?? false {
-                        gg.append(stack.removeLast())
-                        nextToken = stack.last ?? ""
-                    }
-                    if let solvedRoot = solveRoots(stack: &gg) {
-                        if temp == "∛" || temp == "-∛" {
-                            num = "\(cbrt(solvedRoot))"
-                        } else {
-                            num = "\(sqrt(solvedRoot))"
-                        }
-                    } else {
-                        throw CalculationException(msg: .invalidExpression)
-                    }
-                } else {
-                    if let number = Double(stack.removeLast()), number.isFinite {
-                        if temp == "∛" || temp == "-∛" {
-                            num = "\(cbrt(number))"
-                        } else {
-                            num = "\(sqrt(number))"
-                        }
-                    } else {
-                        throw CalculationException(msg: .valueTooLarge)
-                    }
-                }
-                if temp == "-√" || temp == "-∛" {
-                    tempStack.append("-\(num)")
-                } else {
-                    tempStack.append(num)
-                }
-            default:
-                tempStack.append(temp)
-            }
-        }
-        return tempStack.reversed()
-    }
-    
-    func solveRightUnary(stack: inout [String]) throws -> [String] {
-        var tempStack = [String]()
-        var temp: String
-        
-        while !stack.isEmpty {
-            temp = stack.removeLast()
-            switch temp {
-            case "%":
-                let precision = 20
-                guard let num = Decimal(string: tempStack.removeLast()) else {
-                    throw CalculationException(msg: .invalidExpression)
-                }
-                if tempStack.last == "+" && tempStack.count >= 2 {
-                    _ = tempStack.removeLast() // Remove the "+"
-                    var s = [String]()
-                    while !tempStack.isEmpty {
-                        s.append(tempStack.removeLast())
-                    }
-                    if let stepResult = Decimal(string: try solveExpression(&s)) {
-                        let divided = num / Decimal(100)
-                        let multiplied = divided * stepResult
-                        tempStack.append((divided + multiplied).description)
-                    } else {
-                        throw CalculationException(msg: .invalidExpression)
-                    }
-                } else {
-                    tempStack.append((num / Decimal(100)).description)
-                }
-            case "!":
-                guard var number = Decimal(string: tempStack.removeLast()), number.isZero || number.isNormal else {
-                    throw CalculationException(msg: .domainError)
-                }
-                let precision = 20
-                var result: String
-                if number.isSignMinus {
-                    number = abs(number)
-                    result = "-\(factorial(number, precision))"
-                } else {
-                    result = factorial(number, precision).description
-                }
-                tempStack.append(result)
-            default:
-                tempStack.append(temp)
-            }
-        }
-        return tempStack.reversed()
-    }
-
-    func factorial(_ num: Decimal, _ precision: Int) -> Decimal {
-        if num == 0 || num == 1 {
-            return 1
-        }
-        var result: Decimal = 1
-        for i in 2...Int(truncating: num as NSNumber) {
-            result *= Decimal(i)
-        }
-        return result
-    }
-    
-    func solvePower(stack: inout [String]) -> [String] {
-        var tempStack = [String]()
-        while !stack.isEmpty {
-            let temp = stack.removeLast()
-            if temp == "^" {
-                let precision = 20
-                guard let num1 = Decimal(string: tempStack.removeLast()),
-                      let num2 = Decimal(string: stack.removeLast()) else {
-                    continue
-                }
-                if num2 == 1 {
-                    tempStack.append(num1.description)
-                } else {
-                    let result = pow((num1 as NSDecimalNumber) as Decimal, Int(num2 as NSDecimalNumber))
-//                    let result = pow(num1, num2, precision)
-                    tempStack.append(result.description)
-                }
-            } else {
-                tempStack.append(temp)
-            }
-        }
-        return tempStack.reversed()
-    }
-
-    func solveRoots(stack: inout [String]) -> Double? {
-        guard var num = Double(stack.removeLast()) else { return 0 }
-        while !stack.isEmpty {
-            let kk = stack.removeLast()
+            let kk = stack.popLast()!
             if kk == "√" {
                 num = sqrt(num)
             }
@@ -1184,233 +753,106 @@ class ViewController2: UIViewController {
                 num = cbrt(num)
             }
         }
+        
         return num
     }
-
-    func canPlaceDecimal(expression: String) -> Bool {
-        var j = expression.index(before: expression.endIndex)
-        var count = 0
-        while j >= expression.startIndex && !expression[j].isOperator() {
-            if expression[j] == "." {
-                count += 1
-                break
-            }
-            j = expression.index(before: j)
-        }
-        return count == 0
-    }
     
-    func prepareExpression(expression: String) -> String {
-        if expression.isEmpty { return "" }
-        var exp = expression
-
-        // Remove number separator
-        exp = removeNumberSeparator(exp)
-
-        // Replace human readable operator characters with computer readable operator characters
-        exp = exp.replacingOccurrences(of: "÷", with: "/")
-                 .replacingOccurrences(of: "×", with: "*")
-                 .replacingOccurrences(of: "+", with: "+")
-                 .replacingOccurrences(of: "−", with: "-")
-                 .replacingOccurrences(of: "²√", with: "√")
-
-        // Replace constants with their values
-        exp = exp.replacingOccurrences(of: "e", with: "\(M_E)")
-            .replacingOccurrences(of: "π", with: "\(Double.pi)")
-
-        exp = exp.replacingOccurrences(of: "-", with: "+-")
-
-        // Corrective replace
-        exp = exp.replacingOccurrences(of: "^+-", with: "^-")
-                 .replacingOccurrences(of: "(+-", with: "(-")
-//                 .replacingOccurrences(of: "+", with: "")
-                 .replacingOccurrences(of: "/+", with: "/")
-                 .replacingOccurrences(of: "++", with: "+")
-
-        exp = exp.replacingOccurrences(of: "+)", with: ")")
-                 .replacingOccurrences(of: "-)", with: ")")
-                 .replacingOccurrences(of: "/)", with: ")")
-                 .replacingOccurrences(of: "*)", with: ")")
-                 .replacingOccurrences(of: ".)", with: ")")
-                 .replacingOccurrences(of: "^)", with: ")")
-                 .replacingOccurrences(of: "Rand", with: "\(Double.random(in: 0.0...100.0))")
-
-        return exp
-    }
-
-    func getResult(expression: String, angleType: AngleType) throws -> String {
-        if expression.isEmpty {
-            return ""
-        }
-        var exp = ""
-        exp = expression
-//        var lastChar = exp.removeLast()
-
-//        while !canBeLastChar(lastChar) {
-//            exp = String(exp.dropLast())
-//            if !exp.isEmpty {
-//                lastChar = exp.last!
-//            } else {
-//                throw CalculationException(msg: CalculationMessage.invalidExpression)
-//            }
-//        }
-
-        if exp.first == "+" || exp.first == "-" {
-            exp = "0" + exp
-        }
-
-        var stack = [String]()
-        var temp = ""
-        for char in exp {
-            if char.isNumber || char == "(" {
-                if !temp.isEmpty {
-                    stack.append(temp)
-                    temp = ""
-                }
-                stack.append(String(char))
-            } else if char == ")" {
-                if !temp.isEmpty {
-                    stack.append(temp)
-                    temp = ""
-                }
-                var newStack = [String]()
-                while !stack.isEmpty && stack.last != "(" {
-                    newStack.append(stack.removeLast())
-                }
-                stack.removeLast()
-                stack.append(try solveExpression(&newStack, angleType: angleType))
-            } else {
-                temp.append(char)
-            }
-        }
-        if !temp.isEmpty {
-            stack.append(temp)
-        }
-        stack.reverse()
-
-        return try solveExpression(&stack, angleType: angleType)
-    }
-
-    func roundMyAnswer(ans: String, precision: Int = 6) throws -> String {
-    
-        if ans.isEmpty { return "" }
-        do {
-            guard let num = Decimal(string: ans) else {
-                        throw CalculationException(msg: .invalidExpression)
-            }
-            if ans.contains("E") {
-                return formatNumber(num, scale: 7)
-            } else {
-                let roundingMode: NSDecimalNumber.RoundingMode = .plain
-                            let behavior = NSDecimalNumberHandler(roundingMode: roundingMode,
-                                                                  scale: Int16(precision),
-                                                                  raiseOnExactness: false,
-                                                                  raiseOnOverflow: false,
-                                                                  raiseOnUnderflow: false,
-                                                                  raiseOnDivideByZero: false)
-                            let roundedNum = (num as NSDecimalNumber).rounding(accordingToBehavior: behavior)
-                            let trimmedNum = String(describing: roundedNum).trimmingCharacters(in: ["0"])
-                if num.isEqual(to: 0) {
-                    return "0"
+    func solvePower(stack: inout [String]) -> [String] {
+        var tempStack = [String]()
+        var temp: String
+        
+        while !stack.isEmpty {
+            temp = stack.removeLast()
+            if temp == "^" {
+                let precision = 20
+                let num1 = Decimal(string: tempStack.removeLast())!
+                let num2 = Decimal(string: stack.removeLast())!
+                
+                if num2 == 1 {
+                    tempStack.append(num1.description)
                 } else {
-                    return trimmedNum
+                    let result = NSDecimalPower(num1, num2, precision)
+                    if num1 < 0 {
+                        tempStack.append("-\(result)")
+                    } else {
+                        tempStack.append(result.description)
+                    }
                 }
-            }
-        } catch {
-            throw CalculationException(msg: .invalidExpression)
-        }
-    }
-    
-    func calculateExpression(expression: String) -> String {
-        var exp: String = ""
-        if isExpressionBalanced(expression) {
-            exp = prepareExpression(expression: expression)
-        } else {
-                exp = tryBalancingBrackets(expression)
-            if isExpressionBalanced(exp) {
-                exp = prepareExpression(expression: exp)
             } else {
-                return "-1"
+                tempStack.append(temp)
             }
         }
         
-        do {
-            let rawResult = try getResult(expression: exp, angleType: self.isRadMode ? AngleType.deg : AngleType.rad)
-            let result = try roundMyAnswer(ans: rawResult)
-            return rawResult
-        } catch let error as CalculationException {
-            let errorMessage: String
-            switch error.msg {
-                case CalculationMessage.invalidExpression:
-                    errorMessage = NSLocalizedString("str_invalid", comment: "")
-                case CalculationMessage.divideByZero:
-                    errorMessage = NSLocalizedString("str_divide_by_zero", comment: "")
-                case CalculationMessage.valueTooLarge:
-                    errorMessage = NSLocalizedString("str_value_too_large", comment: "")
-                case CalculationMessage.domainError:
-                    errorMessage = NSLocalizedString("str_domain_error", comment: "")
+        tempStack.reverse()
+        return tempStack
+    }
+    
+    func solveRightUnary(stack: inout [String]) throws -> [String] {
+        var tempStack = [String]()
+        
+        while !stack.isEmpty {
+            let temp = stack.removeLast()
+            switch temp {
+            case "%":
+                let precision = 20
+                var num = Decimal(string: tempStack.removeLast())!
+                
+                if tempStack.count >= 2 && tempStack.last == "+" {
+                    _ = tempStack.popLast()
+                    var s = [String]()
+                    while !tempStack.isEmpty {
+                        s.append(tempStack.removeLast())
+                    }
+                    
+                    let stepResult = try solveExpression(&s)
+                    num = num / 100
+                    num = num * Decimal(string: stepResult)!
+                    num += Decimal(string: stepResult)!
+                } else {
+                    num /= 100
+                }
+                tempStack.append(num.description)
+                
+            case "!":
+                guard let number = tempStack.last else {
+                    throw CalculationException(message: .DOMAIN_ERROR)
+                }
+                tempStack.removeLast()
+                if !number.matches("-?\\d+(\\.0)?") {
+                    throw CalculationException(message: .DOMAIN_ERROR)
+                }
+                let precision = 20
+                var result: String
+                if number.hasPrefix("-") {
+                    var num = Decimal(string: String(number.dropFirst()))!
+                    result = "-\(NSDecimalFactorial(num, precision))"
+                } else {
+                    var num = Decimal(string: number)!
+                    result = NSDecimalFactorial(num, precision)
+                }
+                tempStack.append(result)
+                
+            default:
+                tempStack.append(temp)
             }
-            return errorMessage
-        } catch {
-            return "Error"
         }
+        
+        tempStack.reverse()
+        return tempStack
     }
 
-    
-    
-}
-
-extension Double {
-    var toRadians: Double {
-        return self * .pi / 180.0
-    }
-}
-
-extension Character {
-    func isNumber() -> Bool {
-        return self.isNumber || self.isConstant()
-    }
-
-    func isOperator() -> Bool {
-        return self.isUnaryOperator() || self.isBinaryOperator()
-    }
-
-    func isUnaryOperator() -> Bool {
-        return self.isLeftUnaryOperator() || self.isRightUnaryOperator()
-    }
-
-    func isLeftUnaryOperator() -> Bool {
-        let charSet: Set<Character> = ["√", "∛"]
-        return charSet.contains(self)
-    }
-
-    func isRightUnaryOperator() -> Bool {
-        let charSet: Set<Character> = ["%", "!"]
-        return charSet.contains(self)
-    }
-
-    func isBinaryOperator() -> Bool {
-        let charSet: Set<Character> = ["^", "-", "−", "+", "x", "*", "×", "/", "÷"]
-        return charSet.contains(self)
-    }
-
-    func isConstant() -> Bool {
-        return self.isPi() || self.isEulerNumber()
-    }
-
-    func isPi() -> Bool {
-        return self == "π"
-    }
-
-    func isEulerNumber() -> Bool {
-        return self == "e"
-    }
-
-    func isTrigonometricChar() -> Bool {
-        let charSet: Set<Character> = ["¹", "⁻", "s", "i", "n", "c", "o", "t", "a", "l", "g"]
-        return charSet.contains(self)
+    func NSDecimalFactorial(_ num: Decimal, _ precision: Int) -> String {
+        var result = Decimal(1)
+        for i in 2...Int(num) {
+            var factorial = Decimal(i)
+            factorial *= result
+            result = factorial
+        }
+        return result.description
     }
 }
+
+
 
 
 extension ViewController2: UITableViewDelegate, UITableViewDataSource {
@@ -1456,4 +898,16 @@ extension UIColor {
 
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
+}
+
+
+enum CalculationMessage: String {
+    case INVALID_EXPRESSION
+    case DIVIDE_BY_ZERO
+    case VALUE_TOO_LARGE
+    case DOMAIN_ERROR
+}
+
+struct CalculationException: Error {
+    let message: CalculationMessage
 }

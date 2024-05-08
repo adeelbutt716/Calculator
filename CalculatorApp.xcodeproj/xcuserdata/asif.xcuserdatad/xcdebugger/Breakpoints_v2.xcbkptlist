@@ -14,25 +14,9 @@
             filePath = "CalculatorApp/ViewController2.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "424"
-            endingLineNumber = "424"
-            landmarkName = "handlReverse()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "11D7CD51-A171-4178-82C9-CCBDB2CB096A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CalculatorApp/ViewController2.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "404"
-            endingLineNumber = "404"
-            landmarkName = "observeValue(forKeyPath:of:change:context:)"
+            startingLineNumber = "429"
+            endingLineNumber = "429"
+            landmarkName = "playTickSound()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -47,9 +31,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1325"
-            endingLineNumber = "1325"
-            landmarkName = "calculateExpression(expression:)"
-            landmarkType = "7">
+            endingLineNumber = "1325">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -63,9 +45,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1208"
-            endingLineNumber = "1208"
-            landmarkName = "prepareExpression(expression:)"
-            landmarkType = "7">
+            endingLineNumber = "1208">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -79,9 +59,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1296"
-            endingLineNumber = "1296"
-            landmarkName = "roundMyAnswer(ans:precision:)"
-            landmarkType = "7">
+            endingLineNumber = "1296">
             <Locations>
                <Location
                   uuid = "B01A131C-FE7A-4780-933E-0C6EFAB603F2 - aa25fbb7448d04df"
@@ -142,9 +120,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1291"
-            endingLineNumber = "1291"
-            landmarkName = "getResult(expression:angleType:)"
-            landmarkType = "7">
+            endingLineNumber = "1291">
             <Locations>
                <Location
                   uuid = "1A4A3B2F-F0AE-42A9-89EC-04EC17692E0B - 563af0660e9259e1"
@@ -205,9 +181,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1242"
-            endingLineNumber = "1242"
-            landmarkName = "getResult(expression:angleType:)"
-            landmarkType = "7">
+            endingLineNumber = "1242">
             <Locations>
                <Location
                   uuid = "0937C972-A235-4B58-B3B9-83067C45C680 - 563af0660e924397"
@@ -267,10 +241,8 @@
             filePath = "CalculatorApp/ViewController2.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "831"
-            endingLineNumber = "831"
-            landmarkName = "solveExpression(_:angleType:)"
-            landmarkType = "7">
+            startingLineNumber = "897"
+            endingLineNumber = "897">
             <Locations>
                <Location
                   uuid = "267E780E-9BBC-4FAB-BF02-086F47A61561 - fb6a53daf19421df"
@@ -334,6 +306,38 @@
             endingLineNumber = "165"
             landmarkName = "btnScientificTap(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B8BE5EDB-73AE-4525-92D6-937BD1B7FBBB - 7ef0df49ac6aa8d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.btnScientificTap(__C.UIButton) -&gt; ()"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "12880">
+               </Location>
+               <Location
+                  uuid = "B8BE5EDB-73AE-4525-92D6-937BD1B7FBBB - 7ef0df49ac6aa8d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.btnScientificTap(__C.UIButton) -&gt; ()"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "15282">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -346,10 +350,42 @@
             filePath = "CalculatorApp/ViewController2.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "518"
-            endingLineNumber = "518"
-            landmarkName = "appendNumberToScreen(number:)"
+            startingLineNumber = "523"
+            endingLineNumber = "523"
+            landmarkName = "calculate(expression:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "58502E4B-196B-4381-BCE3-0843EF49937D - cdb47f01afb3aee1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.appendNumberToScreen(number: Swift.String) -&gt; ()"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "523"
+                  endingLineNumber = "523"
+                  offsetFromSymbolStart = "540">
+               </Location>
+               <Location
+                  uuid = "58502E4B-196B-4381-BCE3-0843EF49937D - 34db759d74ca1ccb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CalculatorApp.ViewController2.calculate(expression: Swift.String) -&gt; Swift.Double"
+                  moduleName = "CalculatorApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asif/Documents/DigimarkProjects/calculator_pluse_ios_devfied/CalculatorApp/ViewController2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "524"
+                  endingLineNumber = "524"
+                  offsetFromSymbolStart = "422">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -363,9 +399,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1316"
-            endingLineNumber = "1316"
-            landmarkName = "roundMyAnswer(ans:precision:)"
-            landmarkType = "7">
+            endingLineNumber = "1316">
             <Locations>
                <Location
                   uuid = "A240E3C9-3605-4FC7-8419-21C0D1A04E6A - aa25fbb7448d0614"
@@ -425,10 +459,8 @@
             filePath = "CalculatorApp/ViewController2.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "816"
-            endingLineNumber = "816"
-            landmarkName = "solveExpression(_:angleType:)"
-            landmarkType = "7">
+            startingLineNumber = "882"
+            endingLineNumber = "882">
             <Locations>
                <Location
                   uuid = "E0FDAE9D-F903-480E-A2EE-E119F3428929 - fb6a53daf1942fce"
@@ -488,10 +520,8 @@
             filePath = "CalculatorApp/ViewController2.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "826"
-            endingLineNumber = "826"
-            landmarkName = "solveExpression(_:angleType:)"
-            landmarkType = "7">
+            startingLineNumber = "892"
+            endingLineNumber = "892">
             <Locations>
                <Location
                   uuid = "94E19C91-82B6-476A-8870-EB51BCFD86C5 - fb6a53daf19420b4"
@@ -552,9 +582,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1258"
-            endingLineNumber = "1258"
-            landmarkName = "getResult(expression:angleType:)"
-            landmarkType = "7">
+            endingLineNumber = "1258">
             <Locations>
                <Location
                   uuid = "16E468C9-611E-4203-87D5-62E9A2B21E23 - 563af0660e925da0"
@@ -615,9 +643,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1311"
-            endingLineNumber = "1311"
-            landmarkName = "roundMyAnswer(ans:precision:)"
-            landmarkType = "7">
+            endingLineNumber = "1311">
             <Locations>
                <Location
                   uuid = "2AD9FAB3-2FA1-4DC0-A626-EE1D99A23E18 - aa25fbb7448d06ed"
@@ -678,9 +704,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1340"
-            endingLineNumber = "1340"
-            landmarkName = "calculateExpression(expression:)"
-            landmarkType = "7">
+            endingLineNumber = "1340">
             <Locations>
                <Location
                   uuid = "1FF4F06F-22B8-41FF-A8E3-AB4123FAE858 - 3c45bf18859c7d45"
@@ -741,9 +765,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1338"
-            endingLineNumber = "1338"
-            landmarkName = "calculateExpression(expression:)"
-            landmarkType = "7">
+            endingLineNumber = "1338">
             <Locations>
                <Location
                   uuid = "2F9B306C-2C86-4362-B8F3-235EF3136136 - 3c45bf18859c7d26"
@@ -803,26 +825,8 @@
             filePath = "CalculatorApp/ViewController2.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "853"
-            endingLineNumber = "853"
-            landmarkName = "solveAddition(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "50F3BE7B-5CD5-40B5-8AAD-6C3F79E02D62"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CalculatorApp/ViewController2.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "727"
-            endingLineNumber = "727"
-            landmarkName = "tryBalancingBrackets(_:)"
-            landmarkType = "7">
+            startingLineNumber = "917"
+            endingLineNumber = "917">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -836,9 +840,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1329"
-            endingLineNumber = "1329"
-            landmarkName = "calculateExpression(expression:)"
-            landmarkType = "7">
+            endingLineNumber = "1329">
             <Locations>
                <Location
                   uuid = "744E6634-101B-450F-940D-332145CF2E1F - 3c45bf18859c7ed8"
@@ -899,9 +901,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1205"
-            endingLineNumber = "1205"
-            landmarkName = "prepareExpression(expression:)"
-            landmarkType = "7">
+            endingLineNumber = "1205">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -914,10 +914,8 @@
             filePath = "CalculatorApp/ViewController2.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "837"
-            endingLineNumber = "837"
-            landmarkName = "solveAddition(_:)"
-            landmarkType = "7">
+            startingLineNumber = "903"
+            endingLineNumber = "903">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -931,9 +929,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "868"
-            endingLineNumber = "868"
-            landmarkName = "solveAddition(_:)"
-            landmarkType = "7">
+            endingLineNumber = "868">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -947,9 +943,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1211"
-            endingLineNumber = "1211"
-            landmarkName = "prepareExpression(expression:)"
-            landmarkType = "7">
+            endingLineNumber = "1211">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -963,9 +957,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1218"
-            endingLineNumber = "1218"
-            landmarkName = "prepareExpression(expression:)"
-            landmarkType = "7">
+            endingLineNumber = "1218">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -979,9 +971,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1221"
-            endingLineNumber = "1221"
-            landmarkName = "prepareExpression(expression:)"
-            landmarkType = "7">
+            endingLineNumber = "1221">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -995,9 +985,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1224"
-            endingLineNumber = "1224"
-            landmarkName = "prepareExpression(expression:)"
-            landmarkType = "7">
+            endingLineNumber = "1224">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1011,9 +999,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1230"
-            endingLineNumber = "1230"
-            landmarkName = "prepareExpression(expression:)"
-            landmarkType = "7">
+            endingLineNumber = "1230">
             <Locations>
                <Location
                   uuid = "52549FB8-FBD3-4A1A-A370-296BA6FFFF7E - 213bc1be31cad05a"
